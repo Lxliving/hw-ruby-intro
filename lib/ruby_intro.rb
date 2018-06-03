@@ -9,6 +9,7 @@ def sum arr
       result += arr[i]
 	  end
   end
+  
   return result
 end
 
@@ -31,6 +32,7 @@ def max_2_sum arr
         t1=arr[i]
       end
 	  end
+	  
 	  result=t1+t2
   end
   return result
@@ -45,6 +47,7 @@ def sum_to_n? arr, n
           result=true
         end
       end
+      
     end
   end
   return result
@@ -55,6 +58,7 @@ end
 def hello(name)
   a="Hello, "+name
   return a
+  
 end
 
 def starts_with_consonant? s
@@ -66,6 +70,7 @@ def starts_with_consonant? s
     end
   end
   
+  
   return result
 end
 
@@ -73,6 +78,7 @@ def binary_multiple_of_4? s
   result=false
   if (/[^10]/.match(s))==nil
     # 是二进制数或者为空
+    
     if s.length!=0
       if s.to_i(2)%4==0
         result=true
@@ -92,6 +98,7 @@ class BookInStock
 	  raise ArgumentError unless isbn1 != ''
 	  raise ArgumentError unless price1>0
 
+
 	  @isbn=isbn1
 	  @price=price1
 
@@ -101,6 +108,7 @@ class BookInStock
   def isbn
     @isbn
   end
+  
 
   def price
     @price
@@ -112,6 +120,7 @@ class BookInStock
 	  @isbn=value
   end
 
+
   def price=(value)
 	  raise ArgumentError unless value>0
 	  @price=value
@@ -122,3 +131,4 @@ class BookInStock
     return price_s
   end
 end
+
